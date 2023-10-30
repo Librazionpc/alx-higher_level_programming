@@ -17,6 +17,8 @@ int check_cycle(listint_t *list)
 	if (list == NULL)
 		return (0);
 
+	head = list;
+	temp = list;
 	while (temp != NULL && temp->next != NULL)
 	{
 		head = head->next;
