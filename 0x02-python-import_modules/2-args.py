@@ -4,11 +4,11 @@ from sys import argv
 
 lent = len(argv)
 if lent == 1:
-    print("0 arguments.", end="\n")
+    print("0 arguments.")
 elif lent > 1:
     if (lent == 2):
-        print("{} argument:".format(lent - 1), end="\n")
+        print("{:d} argument:".format(lent - 1))
     else:
-        print("{} arguments:".format(lent - 1), end="\n")
+        print("{:d} arguments:".format(lent - 1))
     for i in range(1, lent):
-        print("{}: {}".format(i, argv[i]), end="\n")
+        print("{:d}: {}".format(i, argv[i]))
