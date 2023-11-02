@@ -4,14 +4,15 @@ from sys import argv
 
 def main():
     lent = len(argv)
-    if lent == 1 or lent == 2:
-        statements = "argument."
-    else:
-        statements = "arguments:"
-    print("{:d} {}".format(lent - 1, statements))
-
-    for i in range(1, lent):
-        print("{:d}: {}".format(i, argv[i]))
+    if lent == 1:
+        print("0 arguments.")
+    elif lent > 1:
+        if (lent == 2):
+            print("{:d} argument:".format(lent - 1))
+        else:
+            print("{:d} arguments:".format(lent - 1))
+        for i in range(1, lent):
+            print("{:d}: {}".format(i, argv[i]))
 
 
 if __name__ == "__main__":
