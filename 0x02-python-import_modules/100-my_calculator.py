@@ -7,23 +7,20 @@ def main():
     lent = len(argv)
     if lent != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
-    op = argv[2]
+        exit (1)
+    op= argv[2]
     a = int(argv[1])
     b = int(argv[3])
-    if (op == "+"):
-        i = add(a, b)
-    elif (op == "-"):
-        i = sub(a, b)
-    elif (op == "*"):
-        i = mul(a, b)
-    elif (op == "/"):
-        i = div(a, b)
-    else:
-        print("Unknown operator. Available operators: +, -, * and /")
-        exit(1)
-    print("{} {} {} = {}".format(a, op, b, i))
-
-
+    if (op not in ("+", "-", "*", "/")):
+            print("Unknown operator. Available operators: +, -, * and /")
+            exit (1)
+    if (op == "+"):    
+        print("{} {} {} = {}".format(a, op, b, add(a, b)))
+    elif (op == "-"):    
+        print("{} {} {} = {}".format(a, op, b, sub(a, b)))
+    elif (op == "*"):    
+        print("{} {} {} = {}".format(a, op, b, mul(a, b)))
+    elif (op == "/"):    
+        print("{} {} {} = {}".format(a, op, b, div(a, b)))
 if __name__ == "__main__":
     main()
