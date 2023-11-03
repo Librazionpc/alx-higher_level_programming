@@ -11,9 +11,6 @@ def main():
     op= argv[2]
     a = int(argv[1])
     b = int(argv[3])
-    if (op not in ("+", "-", "*", "/")):
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit (1)
     if (op == "+"):    
         print("{} {} {} = {}".format(a, op, b, add(a, b)))
     elif (op == "-"):    
@@ -22,5 +19,8 @@ def main():
         print("{} {} {} = {}".format(a, op, b, mul(a, b)))
     elif (op == "/"):    
         print("{} {} {} = {}".format(a, op, b, div(a, b)))
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit (1)
 if __name__ == "__main__":
     main()
