@@ -2,8 +2,10 @@
 
 def print_matrix_integer(matrix=[[]]):
     if matrix is not None:
-        for array_of_list in matrix:
-            if array_of_list is not None:
-                for i in array_of_list:
-                    print("{:d}".format(i), end='')
-                print("")
+        for row in matrix:
+            for i in range(0, len(row)):
+                if i == len(row) - 1:
+                    print("{:d}".format(row[i]), end="")
+                else:
+                    print("{:d}".format(row[i]), end=" ")
+            print()
