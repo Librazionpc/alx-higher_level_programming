@@ -1,4 +1,3 @@
-#define PY_SSIZE_T_CLEAN
 #include <stdlib.h>
 #include <stdio.h>
 #include <Python.h>
@@ -8,7 +7,7 @@
  */
 void print_python_list_info(PyObject *p)
 {
-	Py_ssize_t size, index;
+	size_t size, index;
 	PyObject *item;
 
 	size = PyList_Size(p);
