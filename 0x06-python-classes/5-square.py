@@ -69,5 +69,5 @@ class Sqaure:
             print()
         for i in range(0, self.__size):
             for i in range(0, self.__size):
-                print("#".end="")
+                print("#", end="")
             print()
