@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Module Square"""
+
 
 class Square:
     """ Square class that defines geometric computation
