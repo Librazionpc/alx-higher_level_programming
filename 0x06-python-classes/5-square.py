@@ -2,7 +2,7 @@
 """Module Sqaure"""
 
 
-class Sqaure:
+class Square:
     """ Square class defined by geometric shap
 
         Attributes:
@@ -19,6 +19,20 @@ class Sqaure:
         """
         self.__size = size
 
+    @property
+    def size(self):
+        """
+        Setter of size
+
+        Args:
+            size (int): size of the square
+        Raises
+            TypeError: if size is not int
+            ValueError: size less than 0
+        Returns:
+            None
+        """
+        return (self.__size)
     @size.setter
     def size(self, value):
         """
@@ -34,20 +48,7 @@ class Sqaure:
         else:
             self.__size = value
 
-    @property
-    def size(self):
-        """
-        Setter of size
-
-        Args:
-            size (int): size of the square
-        Raises
-            TypeError: if size is not int
-            ValueError: size less than 0
-        Returns:
-            None
-        """
-        return (self.value)
+    
 
     def area(self):
         """
@@ -67,7 +68,8 @@ class Sqaure:
         """
         if (self.__size == 0):
             print()
-        for i in range(0, self.__size):
+        else:
             for i in range(0, self.__size):
-                print("#", end="")
-            print()
+                for j in range(0, self.__size):
+                    print("#", end="")
+                print()
