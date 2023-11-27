@@ -13,6 +13,7 @@ class Square:
         """initializes the square
         Args:
             size (int): size of the square
+            position (tuple): Empty
 
         Returns:
             None
