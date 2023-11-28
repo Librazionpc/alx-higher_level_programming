@@ -118,7 +118,6 @@ class Rectangle:
         rectangle = str(self.print_symbol)
         return (((rectangle * self.__width + "\n") * self.__height)[:-1])
 
-
     def __repr__(self):
         """Gets the reprentation of the string
 
