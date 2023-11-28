@@ -115,13 +115,8 @@ class Rectangle:
         """
         if (self.__height == 0 or self.__width == 0):
             return ("")
-        rectangle = ""
-
-        for i in range(0, self.__height):
-            rectangle += str(self.print_symbol) * self.__width
-            if i < self.__height:
-                rectangle += "\n"
-        return (rectangle[:-1])
+        rectangle = str(self.print_symbol)
+        return (((rectangle * self.__width + "\n") * self.__height)[:-1])
 
     def __repr__(self):
         """Gets the reprentation of the string

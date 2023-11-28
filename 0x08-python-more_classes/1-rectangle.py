@@ -50,25 +50,25 @@ class Rectangle:
     @property
     def height(self):
         """
-            Retrives width
+            Retrives height
 
-            Return: self.__width (The width of the retangle)
+            Return: self.__height (The height of the retangle)
         """
         return (self.__height)
 
-    @width.setter
+    @height.setter
     def height(self, value):
         """
-            Sets the width
+            Sets the height
 
             Attrinbutes:
-                value (int): The value of the width needed
+                value (int): The value of the height needed
 
             Returns: Nothing
         """
 
         if (type(value) != int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         if (value < 0):
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
