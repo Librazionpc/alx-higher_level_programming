@@ -151,8 +151,12 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         elif not (isinstance(rect_2, Rectangle)):
             raise TypeError("rect_1 must be an instance of Rectangle")
+        Area_1 = rect_1.area()
+        Area_2 = rect_2.area()
+        if Area_1 >= Area_2:
+            return rect_1
         else:
-            return (rect_1)
+            rect_2
 
     @classmethod
     def square(cls, size=0):
