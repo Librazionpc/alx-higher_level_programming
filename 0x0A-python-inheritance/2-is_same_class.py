@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """My Function that intances"""
 
+
 def is_same_class(obj, a_class):
     """Checks intances
 
