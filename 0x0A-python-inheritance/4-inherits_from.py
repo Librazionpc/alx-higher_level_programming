@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """functions that checks for inheritance"""
 
+
 def inherits_from(obj, a_class):
     """checks for subclasses
 
