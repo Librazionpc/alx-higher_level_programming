@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """My lookup obj"""
 
+
 def lookup(obj):
     """a look up object
 
