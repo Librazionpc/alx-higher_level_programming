@@ -11,7 +11,10 @@ class Square(Rectangle):
     def __init__(self, size):
         """Initialize Square"""
         super().__init__(size, size)
-        self.integer_validator("size", size)
+        if (type(size) != int):
+            raise TypeError("size width must be an integer")
+        if (size < 0):
+            raise ValueError("size must be greater than 0")
         self.__size = size
 
     def area(self):
