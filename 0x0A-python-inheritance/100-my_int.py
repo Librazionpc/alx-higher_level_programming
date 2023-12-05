@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-"""A Class Module"""
+"""MyInt Module"""
 
 
-class Myint(int):
+class MyInt(int):
+    """MyInt class inheriting from int"""
 
-    """ inherit from int
+    def __init__(self, num):
+        """Initialize MyInt with an integer"""
+        self.num = num
 
-    Args:
-        int (int): is a rebel
-    """
+    def __eq__(self, other):
+        """Override the == operator"""
+        return self.num != other
 
-    def __eq__(self, other_no):
-        return super().__ne__(other_no)
-
-    def __ne__(self, other_no):
-        return super().__eq__(other_no)
+    def __ne__(self, other):
+        """Override the != operator"""
+        return self.num == other
