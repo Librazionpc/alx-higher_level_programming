@@ -4,5 +4,7 @@ import json
 
 
 def to_json_string(my_obj):
-    """Function that returns the Json representation of an object."""
+    """
+    Function that returns the Json representation of an object.
+    """
     return json.dumps(my_obj)
