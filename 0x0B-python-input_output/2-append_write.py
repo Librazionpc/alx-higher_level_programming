@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Function that deals file i/o"""
+
+
 def append_write(filename="", text=""):
 
     """function that appends a string at the end of a

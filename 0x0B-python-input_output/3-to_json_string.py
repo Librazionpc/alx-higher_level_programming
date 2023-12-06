@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """"Function that deals with Json"""
+import json
 
 
 def to_json_string(my_obj):
