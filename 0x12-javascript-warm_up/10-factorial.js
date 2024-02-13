@@ -12,7 +12,7 @@ const factorial = (num) => {
 };
 
 if (process.argv.length === 2) {
-  console.log(1);
+  console.log(0);
 } else {
   factorial(parseInt(process.argv[2]));
 }
