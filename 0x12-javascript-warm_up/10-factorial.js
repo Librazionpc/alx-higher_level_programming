@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const factorial = (num) => {
+function factorial (num) {
   let answer = 1;
   if (num) {
     for (let i = num; i > 0; i--) {
@@ -9,10 +9,10 @@ const factorial = (num) => {
     console.log('NaN');
   }
   console.log(answer);
-};
+}
 
 if (process.argv.length === 2) {
-  console.log(0);
+  console.log(1);
 } else {
   factorial(parseInt(process.argv[2]));
 }
