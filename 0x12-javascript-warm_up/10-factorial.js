@@ -1,14 +1,24 @@
 #!/usr/bin/node
+
 function factorial (num) {
-  let answer = 1;
-  if (num) {
-    for (let i = num; i > 0; i--) {
-      answer *= i;
-    }
-  } else {
-    console.log('NaN');
+  if (isNaN(num)) {
+    console.log(1);
+    return;
   }
-  console.log(answer);
+
+  if (num === 0) {
+    console.log(1);
+    return;
+  }
+
+  if (num === 1) {
+    console.log(1);
+    return 1;
+  }
+
+  const result = num * factorial(num - 1);
+  console.log(result);
+  return result;
 }
 
 if (process.argv.length === 2) {
