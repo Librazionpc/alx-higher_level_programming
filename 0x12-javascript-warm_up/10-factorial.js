@@ -15,10 +15,15 @@ function factorial (num) {
     console.log(1);
     return 1;
   }
-
-  const result = num * factorial(num - 1);
-  console.log(result);
-  return result;
+ let answer = 1;
+  if (num) {
+    for (let i = num; i > 0; i--) {
+      answer *= i;
+    }
+  } else {
+    console.log('NaN');
+  }
+  console.log(answer);
 }
 
 if (process.argv.length === 2) {
