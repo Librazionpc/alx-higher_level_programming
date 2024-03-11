@@ -15,7 +15,7 @@ function factorial (num) {
     console.log(1);
     return 1;
   }
- let answer = 1;
+  let answer = 1;
   if (num) {
     for (let i = num; i > 0; i--) {
       answer *= i;
