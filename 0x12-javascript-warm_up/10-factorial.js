@@ -1,29 +1,17 @@
 #!/usr/bin/node
 
-function factorial (num) {
+function factorial(num, result = 1) {
   if (isNaN(num)) {
     console.log(1);
     return;
   }
 
-  if (num === 0) {
-    console.log(1);
+  if (num === 0 || num === 1) {
+    console.log(result);
     return;
   }
 
-  if (num === 1) {
-    console.log(1);
-    return 1;
-  }
-  let answer = 1;
-  if (num) {
-    for (let i = num; i > 0; i--) {
-      answer *= i;
-    }
-  } else {
-    console.log('NaN');
-  }
-  console.log(answer);
+  return factorial(num - 1, num * result);
 }
 
 if (process.argv.length === 2) {
