@@ -1,12 +1,12 @@
 #!/usr/bin/node
 
-const { dict } = require('./101-main.js');
-const UserOccurrenceDict = [];
+const { dict } = require('./101-main.js').dict;
+const newDict = {};
 for (const key in dict) {
-  const value = dict[key];
-  if (UserOccurrenceDict[value] === undefinded) {
-    UserOccurrenceDict[value] = [Key];
+  if (newDict[dict[key]] === undefined) {
+    newDict[dict[key]] = [key];
+  } else {
+    newDict[dict[key]].push(key);
   }
-
-  UserOccurrenceDict[value].push(key);
 }
+console.log(newDict);
