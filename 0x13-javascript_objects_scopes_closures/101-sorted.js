@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const { dict } = require('./data');
-const UserOccurrenceDict = []
+const UserOccurrenceDict = [];
 for (const key in dict) {
   const value = dict[key];
 
