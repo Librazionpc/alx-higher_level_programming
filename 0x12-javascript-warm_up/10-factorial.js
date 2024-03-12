@@ -16,7 +16,6 @@ function factorial (num, result = 1) {
 
 if (process.argv.length === 2) {
   console.log(1);
-  return;
 } else {
   factorial(parseInt(process.argv[2]));
 }
