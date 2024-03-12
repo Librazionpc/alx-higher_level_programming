@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-class Rectangle {
+module.exports = class Rectangle {
   constructor (w, h) {
     if (parseInt(w) && parseInt(h)) {
       this.width = w;
@@ -8,5 +8,3 @@ class Rectangle {
     }
   }
 }
-
-module.exports = Rectangle;
