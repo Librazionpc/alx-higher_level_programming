@@ -14,4 +14,4 @@ class Square extends require('./5-square.js') {
   }
 }
 
-module.exports = { Square };
+module.exports = Square;
