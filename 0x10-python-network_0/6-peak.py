@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
-
+#!/usr/bin/python3
+"""Function that finds the peak if integers in the list
+"""
 def find_peak(list_of_integers):
     highest = 0
     if list_of_integers == []:
