@@ -2,6 +2,8 @@
 """Function that finds the peak if integers in the list
 """
 def find_peak(list_of_integers):
+    """Function that deals with intergers
+    """
     highest = 0
     if list_of_integers == []:
         return None
